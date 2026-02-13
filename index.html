@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Build Showcase</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #13120C; /* dark bg */
+            color: #F6F8FA; /* primary text */
+        }
+
+        header {
+            padding: 20px;
+            text-align: center;
+            background-color: #000000; /* header bg */
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            color: #586548; /* accent color */
+            letter-spacing: 2px;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #CEDFD4; /* secondary text */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #586548; /* accent hover */
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .card {
+            background-color: #000000; /* card bg */
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.4s, box-shadow 0.4s;
+            cursor: pointer;
+            border: 2px solid #CEDFD4;
+        }
+
+        .card:hover {
+            transform: rotateY(10deg) scale(1.05);
+            box-shadow: 0 10px 20px rgba(88,101,72,0.6); /* neon accent */
+        }
+
+        .card img {
+            width: 100%;
+            display: block;
+        }
+
+        .card .info {
+            padding: 15px;
+        }
+
+        .card .info h3 {
+            margin: 10px 0 5px;
+            color: #586548; /* accent */
+        }
+
+        .card .info p {
+            margin: 5px 0;
+            font-size: 0.9em;
+            color: #CEDFD4; /* secondary text */
+        }
+
+        .card .info a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: #586548; /* button accent */
+            color: #F6F8FA; /* button text */
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .card .info a:hover {
+            background-color: #CEDFD4; /* hover button */
+            color: #13120C;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #000000;
+            color: #CEDFD4;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My PC Builds</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+        <a href="https://www.facebook.com/YourPage" target="_blank">Facebook</a>
+    </nav>
+</header>
+
+<section class="gallery">
+    <!-- Card 1 -->
+    <div class="card" onclick="window.open('https://via.placeholder.com/800','_blank')">
+        <img src="https://via.placeholder.com/400x250?text=PC+Build+1" alt="PC Build 1">
+        <div class="info">
+            <h3>PC Build 1</h3>
+            <p>CPU: Ryzen 5 5600G</p>
+            <p>GPU: GTX 1660</p>
+            <p>RAM: 16GB</p>
+            <p>Price: $900</p>
+            <a href="https://www.facebook.com/YourPage" target="_blank">Order Now</a>
+        </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card" onclick="window.open('https://via.placeholder.com/800','_blank')">
+        <img src="https://via.placeholder.com/400x250?text=PC+Build+2" alt="PC Build 2">
+        <div class="info">
+            <h3>PC Build 2</h3>
+            <p>CPU: Ryzen 7 5700G</p>
+            <p>GPU: RTX 3060</p>
+            <p>RAM: 32GB</p>
+            <p>Price: $1500</p>
+            <a href="https://www.facebook.com/YourPage" target="_blank">Order Now</a>
+        </div>
+    </div>
+
+    <!-- Add more cards as needed -->
+</section>
+
+<footer>
+    &copy; 2026 My PC Builds | <a href="https://www.facebook.com/YourPage" target="_blank" style="color:#586548;">Facebook</a>
+</footer>
